@@ -1,16 +1,12 @@
 
 TehranHousePricePredictor
+
 Overview
 This project predicts apartment prices in Tehran, Iran, using machine learning. It utilizes the House_cleaned.csv dataset, which includes features like area, number of rooms, parking, warehouse, elevator, and address. The model employs non-linear regression (cubic polynomial) to estimate prices in USD and IRR, with a focus on simplicity and interpretability for educational purposes.
 Dataset
 
-
-
-Algorithm Used: Random Forest Regression
-
-
-
 Source: House_cleaned.csv
+
 Features:
 Area: Apartment size (square meters)
 Room: Number of bedrooms
@@ -32,6 +28,7 @@ Normalize data using Min-Max scaling (x/max(x)).
 
 
 Model:
+Random Forest Regression and n_estimators=100, random_state=42
 Cubic polynomial regression (y = a*x^3 + b*x^2 + c*x + d) to capture non-linear relationships.
 Train-test split: 90% training, 10% testing (randomized with np.random.rand).
 
@@ -56,10 +53,6 @@ Usage
 Run the script to train the model and predict prices:
 python main.py
 
-Example: Predict price for an apartment (100 m², 2 rooms, parking, warehouse, elevator, Saadat Abad):
-
-Edit new_house in main.py for custom inputs.
-Outputs price in USD and IRR (1 USD = 30,000 IRR assumed).
 
 Results
 
