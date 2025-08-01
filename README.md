@@ -10,7 +10,7 @@ Area: Apartment size (square meters)
 Room: Number of bedrooms
 Parking, Warehouse, Elevator: Binary (0/1) amenities
 Address: Location (categorical)
-Price: Price in IRR
+Price: Price in IRR              (It was not considered as a target variable due to its large value)
 Price(USD): Price in USD
 
 
@@ -27,18 +27,18 @@ Normalize data using Min-Max scaling (x/max(x)).
 
 Model:
 Cubic polynomial regression (y = a*x^3 + b*x^2 + c*x + d) to capture non-linear relationships.
-Train-test split: 80% training, 20% testing (randomized with np.random.rand).
+Train-test split: 90% training, 10% testing (randomized with np.random.rand).
 
 
 Evaluation:
 Metrics: Mean Absolute Error (MAE), Mean Squared Error (MSE), R² Score.
-Visualizations: Scatter plots with fitted curve.
+
 
 
 
 Installation
 
-Clone the repository:git clone https://github.com/your-username/TehranHousePricePredictor.git
+Clone the repository:git clone https://github.com/Koori2065/TehranHousePricePredictor.git
 
 
 Install dependencies:pip install pandas numpy scikit-learn scipy matplotlib
@@ -57,22 +57,14 @@ Outputs price in USD and IRR (1 USD = 30,000 IRR assumed).
 
 Results
 
-Sample metrics (example):
+Sample metrics  :
 MAE: 0.12 (normalized)
 MSE: 0.02 (normalized)
-R² Score: ~0.7
+R² Score: between 0.7 and 0.8
 
 
-Visualizations saved in plots/ folder.
-
-Future Improvements
-
-Test additional non-linear models (e.g., logarithmic or exponential).
-Implement One-Hot Encoding for Address to capture location effects better.
-Use cross-validation for robust evaluation.
-Explore advanced models like Random Forest or Neural Networks.
 
 License
 MIT License
-Copyright (c) 2025 [Your Name]
-Permission is hereby granted, free of charge, to any person obtaining a copy...
+Copyright (c) 2025 [Kourosh Asadi]
+Permission is hereby granted, free of charge, to any person obtaining a copy.
