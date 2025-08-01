@@ -4,6 +4,12 @@ Overview
 This project predicts apartment prices in Tehran, Iran, using machine learning. It utilizes the House_cleaned.csv dataset, which includes features like area, number of rooms, parking, warehouse, elevator, and address. The model employs non-linear regression (cubic polynomial) to estimate prices in USD and IRR, with a focus on simplicity and interpretability for educational purposes.
 Dataset
 
+
+
+Algorithm Used: Random Forest Regression
+
+
+
 Source: House_cleaned.csv
 Features:
 Area: Apartment size (square meters)
