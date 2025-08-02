@@ -47,7 +47,7 @@ Clone the repository:git clone https://github.com/Koori2065/TehranHousePricePred
 Install dependencies:pip install pandas numpy scikit-learn scipy matplotlib
 
 
-Place House_cleaned.csv in the project directory.
+Place House.csv in the project directory.
 
 Usage
 Run the script to train the model and predict prices:
