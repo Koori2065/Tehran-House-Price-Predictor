@@ -48,8 +48,18 @@ Visualization: 3D scatter plots for cluster comparison.
 
 Evaluation
 Metrics: Visual inspection via 3D plots; K-Means and Hierarchical ('complete') yield balanced clusters, while DBSCAN identifies excessive noise.
+
+
+
+
 Clone the repository
 textgit clone https://github.com/Koori2065/CustomerSegmentation.git
+
+
+
+
+
+
 License
 MIT License
 Copyright (c) 2025 [Kourosh Asadi]
